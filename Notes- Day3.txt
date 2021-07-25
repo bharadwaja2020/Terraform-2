@@ -28,4 +28,8 @@ Tainiting Resources: For destroying and recreating reources we can mark them as 
                     In the next run it will destroy and recreate the resources.
 
 Let's see if GIT can find out.
+<<<<<<< Updated upstream
 Adding this new change to check what happens when i checkout from cmd.
+=======
+I've added this line from cmd.
+>>>>>>> Stashed changes
