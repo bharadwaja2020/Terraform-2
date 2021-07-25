@@ -1,0 +1,29 @@
+Attributes and Output Values: Attributes related to the resource can be found in tfstate file.
+                                Ex: In case if we create S3 bucket all it's values are stored in tfstate file.
+                              Output values on the other hand, we can define in out .tf files and assign values to them.
+
+Variables: Can define and use terraform variables in .tf files. We can assign default or specific values as key pairs.
+            Variable assignment can be in many ways. We can pass the value from cmd or it will ask while running plan if not specified
+            or we can define in terraform.tfvars file which is a standard. If we need to keep it in custom file, then we need to
+            define the same while running "terraform plan" command with a tag.
+
+All supported Datat types can be used for variables just like in any programming language. Important data types like
+Lists & Maps are used often for better coding.
+
+Conditional Expressions can also be used to dynamically write our code.
+
+Local values: We can define some local values in seperate block like author name, owner etc so we can use them anywhere in the code.
+
+Terraform functions: There were many functions in documentation we can use ( Revisit the video again for details.)
+
+Debugging: We can use TF_LOG = TRACE for generating logs on cmd itself or TF_LOG_PATH = custom path for saving log files.
+
+Terraform Format: We can use "Terraform fmt" for formatting all .tf files in our project.
+
+Load Order and Semantics: Can specify all our resources and blocks in seperate .tf files and terraform will run them without any issue.
+
+Dynamic Block: We can use iterators to create dynamic blocks in the code ( Revisit the video again for details.)
+
+Tainiting Resources: For destroying and recreating reources we can mark them as "terraform taint aws_instance.myec2". 
+                    In the next run it will destroy and recreate the resources.
+

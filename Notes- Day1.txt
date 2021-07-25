@@ -1,0 +1,14 @@
+Terraform: 
+terraform init: After adding a provider, this command will download plugins assosiated with the provider.
+
+terraform plan: For preparing the changes that need to be applied.
+terraform validate: For validating the syntax.
+terraform apply: For implementing the changes.
+
+Resources: Different functionalities of provider like "aws_instance" for working on aws EC2 instances.
+
+terraform destroy: 
+
+			Ex: terraform destroy -target aws_instance.myec2
+
+terraform state file: Terraform will maintain a file with all our infrastructure changes to track in terraform state file.

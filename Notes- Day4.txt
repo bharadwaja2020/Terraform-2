@@ -1,0 +1,20 @@
+Splat expression: in order to retrieve output of all the values we can use [*].
+
+Terraform graph: This command will convert the .tf to .dot file. 
+                 With the help of conversion software, we can change it to .svn and view as image.
+
+Terraform plan -out=filename : This will save the plan into specific file in binary format. We can then use this to run apply later.
+                                Ex: terraform plan -out=customfile
+                                    terraform apply customfile
+
+remote-exec and local-exec: These blocks were used to define commands to run after ec2 provisioning like installing nginx etc.
+                            remote-exec for running those on remote server and local-exec on local machine
+
+Provisioners: Creation time - We can specify which commands to run for provisioning EC2 instances. Also if a command fails then 
+                              the resources will be in tainted mode.
+              Destroy time - We can specify a parameter "when = destroy" in the provision block to tell terraform to run the 
+                             commands mentioned during the terraform destroy run. this way we can stop services before destroying
+                             instances as a use case.
+             *In case any of the commands we define failes, we can use "on_failure = continue" parameter in provision block to move forward.
+
+Modules: we can define a block named "modules" and define an attribute named "source" and point it to any .tf files to run.  

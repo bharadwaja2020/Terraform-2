@@ -1,0 +1,7 @@
+Terraform tfstate file: All the infra related details will be available here.
+
+Variables: var "my-var" {
+default = "value"
+}
+
+terraform.tfvars - We can specify all teh variable names in single file so that while applying teraform will pick it up automatically.
