@@ -27,3 +27,4 @@ Dynamic Block: We can use iterators to create dynamic blocks in the code ( Revis
 Tainiting Resources: For destroying and recreating reources we can mark them as "terraform taint aws_instance.myec2". 
                     In the next run it will destroy and recreate the resources.
 
+Let's see if GIT can find out.
