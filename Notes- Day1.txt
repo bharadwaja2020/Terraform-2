@@ -12,3 +12,5 @@ terraform destroy:
 			Ex: terraform destroy -target aws_instance.myec2
 
 terraform state file: Terraform will maintain a file with all our infrastructure changes to track in terraform state file.
+
+Testing
