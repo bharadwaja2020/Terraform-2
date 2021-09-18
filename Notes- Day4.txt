@@ -18,3 +18,5 @@ Provisioners: Creation time - We can specify which commands to run for provision
              *In case any of the commands we define failes, we can use "on_failure = continue" parameter in provision block to move forward.
 
 Modules: we can define a block named "modules" and define an attribute named "source" and point it to any .tf files to run.  
+
+Testing
